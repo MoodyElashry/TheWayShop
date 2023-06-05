@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ThewayShop - Ecommerce</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  
+  <body>
+    <div class="nav1 w-100 d-flex justify-content-between h-25">
+
+        <div class="offer d-flex mt-1">
+            <i class="fa-brands fa-opencart p-2" style="color: #840a06;font-size: 25px;"></i>
+            <div class="offer-txt">
+                <p class="offer-txt2 p-2 z-1 position-absolute" style="font-weight: 600;">Off 50%! Shop Now</p>
+
+            </div>
+        </div>
+        <div class="other-side p-1 m-1 d-flex d-sm-none d-md-flex d-none d-sm-flex" style="margin-top:5px;">
+          <ul class="info user-select-none">
+            <li>MY ACCOUNT</li>
+            <li>OUR LOCATION</li>
+            <li style="border-right:0px;">CONTACT US</li>
+          </ul>
+          <div style="color: white;margin-top: 5px;">Call Us :- +11 900 800 100</div>
+          
+            
+          
+          
+        </div>
+        <div class="dropdown d-block d-md-none m-2">
+          <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+            <li><a class="dropdown-item" href="#">OUR LOCATION</a></li>
+            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="nav2">
+      <div class="d-flex mx-5 justify-content-between">
+        <div class="m-3">
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="container-nav d-flex">
+          <ul class="nav2-ul d-none d-lg-flex">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Product &nbsp;<i class="fa-solid fa-shirt" style="color: #000000;"></i></li>
+            <li>Shop &nbsp;<i class="fa-solid fa-shop" style="color: #000000;"></i></li>
+            <li>Our Service</li>
+            <li>Contact Us</li>
+          </ul>
+          <div class="d-flex offcanvas-btn1">
+            <div class="dropdown d-lg-none nav-dropdown">
+              <a class="btn btn-light dropdown-toggle nav-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Product &nbsp;<i class="fa-solid fa-shirt" style="color: #000000;"></i></a></li>
+                <li><a class="dropdown-item" href="#">Shop &nbsp;<i class="fa-solid fa-shop" style="color: #000000;"></i></a></li>
+                <li><a class="dropdown-item" href="#">Our Service</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <i class="fa-solid fa-magnifying-glass" style="margin-top:13px ;"></i>
+            <button class="btn btn-light offcanvas-btn mt-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></button>
+
+<div class="offcanvas offcanvas-end offcanvas1" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Cart</h5>
+    <button type="button" style="background-color: #000000;" data-bs-dismiss="offcanvas"><i class="fa-solid fa-xmark" style="color: #ffffff;background-color: #000000;"></i></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="cart container">
+      <table class="table-light table-hover">
+        <tr>
+          <div class="item1 d-flex">
+            <img src="assets/images/img-pro-01.jpg" alt="" height="100px" >
+            <div class="item-txt d-block m-3">
+
+              <h6>Delica omtantur</h6>
+              <p style="opacity:0.8;">1x - $80.00</p>
+            </div>
+            
+          </div>
+        </tr>
+        <tr>
+          <div class="item1 d-flex">
+            <img src="assets/images/img-pro-02.jpg" alt="" height="100px" >
+            <div class="item-txt d-block m-3">
+
+              <h6>Omnes occuret</h6>
+              <p style="opacity:0.8;">1x - $60.00</p>
+            </div>
+            
+          </div>
+        </tr>
+        <tr>
+          <div class="item1 d-flex">
+            <img src="assets/images/img-pro-03.jpg" alt="" height="100px" >
+            <div class="item-txt d-block m-3">
+
+              <h6>Agam facilisis</h6>
+              <p style="opacity:0.8;">1x - $40.00</p>
+            </div>
+            
+          </div>
+        </tr>
+        <tr>
+          <div class="addtocart d-flex">
+            <button onclick="Swal.fire(
+              'Added Successfully',
+              'Product was added',
+              'success'
+            )">Add to Cart</button>
+            <p style="opacity:0.8;color: #000000;margin: 30px;">Total $180.00</p>
+            
+          </div>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="carousel1 z-3 position-relative">
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-25">
+          <div class="carousel-item active">
+            <img src="assets/images/banner-01.jpg" class="d-block img-fluid z-0 position-relative" alt="...">
+            <div class="position-absolute z-2 carousel-overlay"></div>
+            <div class="carousel-caption d-none d-md-block justify-content-start carousel-txt z-3" style="text-align: start; margin-bottom: 100px;">
+              <h1>Welcome To Thewayshop</h1>
+              <p style="opacity: 0.8;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad neque nam soluta voluptas explicabo assumenda in quae itaque quisquam</p>
+              <div class="addtocart d-flex" style="background-color: transparent;"><button>Shop NOW</button></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banner-02.jpg" class="d-block img-fluid" alt="...">
+            <div class="position-absolute z-2 carousel-overlay"></div>
+            <div class="carousel-caption d-none d-md-block justify-content-Center carousel-txt z-3 "style="text-align: center; margin-bottom: 100px;">
+              <h1>Welcome To Thewayshop</h1>
+              <p style="opacity: 0.8;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad neque nam soluta voluptas explicabo assumenda in quae itaque quisquam</p>
+              <div class="addtocart d-flex" style="background-color: transparent;margin-left: 200px;"><button>Shop NOW</button></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/banner-03.jpg" class="d-block img-fluid" alt="...">
+            <div class="position-absolute z-2 carousel-overlay"></div>
+            <div class="carousel-caption d-none d-md-block justify-content-end carousel-txt z-3 "style="text-align: end; margin-bottom: 100px;">
+              <h1>Welcome To Thewayshop</h1>
+              <p style="opacity: 0.8;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad neque nam soluta voluptas explicabo assumenda in quae itaque quisquam</p>
+              <div class="addtocart d-flex" style="background-color: transparent;margin-left: 400px;"><button>Shop NOW</button></div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev carousel-btn1
+        " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span> -->
+          <div class="carousel-btn1"><i class="fa-solid fa-circle-arrow-left fa-2xl" ></i></div>
+        </button>
+        <button class="carousel-control-next carousel-btn1" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span> -->
+          <div class="carousel-btn1"><i class="fa-solid fa-circle-arrow-right fa-2xl"></i></div>
+        </button>
+      </div>
+    </div>
+
+    <div class="part2 mt-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/t-shirts-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-25" style="margin-left:100px ;">T-Shirts</p></div>
+           </div>
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/wallet-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-25" style="margin-left:100px ;">Wallets</p></div>
+           </div>
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/shoes-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-25" style="margin-left:100px ;">Shoes</p></div>
+           </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/shirt-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-25" style="margin-left:100px ;">Shirts</p></div>
+           </div>
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/women-bag-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-25" style="margin-left:100px ;">Bags</p></div>
+           </div>
+           <div class="category z-4 position-relative col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/women-shoes-img.jpg" alt="" class="img-fluid">
+            <div class="category-txt w-100"><div class="red position-absolute z-1"></div><div class="black position-absolute z-2"></div><p class="z-3 position-absolute m-2 w-50" style="margin-left:100px ;">Women Shoes</p></div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="products justify-content-center align-content-center">
+      <h3 style="margin-top: 40px;">Featured Products</h3>
+      <p style="opacity: 0.8;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat soluta ipsam suscipit!</p>
+      <div id="myBtnContainer">
+        <button class="btn2" onclick="filterSelection('all')">All</button>
+        <button class="btn2" onclick="filterSelection('cars')">Top Featured</button>
+        <button class="btn2" onclick="filterSelection('colors')">Best Sellers</button>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="filterDiv colors justify-content-center the-filter p-0 position-relative z-5 col-lg-3 col-md-6 col-sm-12">
+            <div class="img-overlay z-3">
+
+              <img src="assets/images/img-pro-01.jpg" alt="" class="img-fluid z-0 position-relative" width="100%">
+              <div class="tag">SALE</div>
+              <div class="img-overlay1">
+                <div class="overlay1 d-block">
+                  <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                  <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+
+                </div>
+                <div class="overlay2">
+                  <button onclick="Swal.fire(
+              'Added Successfully',
+              'Product was added',
+              'success'
+            )">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <p class="mx-3 mt-2">Lorem ipsum dolor sit amet.</p>
+            <h5 class="m-3">$7.79</h5>
+          </div>
+          <div class="filterDiv cars justify-content-center the-filter p-0 position-relative z-5 col-lg-3 col-md-6 col-sm-12">
+            <div class="img-overlay z-3">
+
+              <img src="assets/images/img-pro-02.jpg" alt="" class="img-fluid z-0 position-relative" width="100%">
+              <div class="tag" style="background-color: #000000;">NEW</div>
+              <div class="img-overlay1">
+                <div class="overlay1 d-block">
+                  <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                  <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+
+                </div>
+                <div class="overlay2">
+                  <button onclick="Swal.fire(
+              'Added Successfully',
+              'Product was added',
+              'success'
+            )">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <p class="mx-3 mt-2">Lorem ipsum dolor sit amet.</p>
+            <h5 class="m-3">$9.79</h5>
+          </div>
+          <div class="filterDiv cars justify-content-center the-filter p-0 position-relative z-5 col-lg-3 col-md-6 col-sm-12">
+            <div class="img-overlay z-3">
+
+              <img src="assets/images/img-pro-03.jpg" alt="" class="img-fluid z-0 position-relative" width="100%">
+              <div class="tag">SALE</div>
+              <div class="img-overlay1">
+                <div class="overlay1 d-block">
+                  <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                  <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+
+                </div>
+                <div class="overlay2">
+                  <button onclick="Swal.fire(
+              'Added Successfully',
+              'Product was added',
+              'success'
+            )">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <p class="mx-3 mt-2">Lorem ipsum dolor sit amet.</p>
+            <h5 class="m-3">$10.79</h5>
+          </div>
+          <div class="filterDiv colors justify-content-center the-filter p-0 position-relative z-5 col-lg-3 col-md-6 col-sm-12">
+            <div class="img-overlay z-3">
+
+              <img src="assets/images/img-pro-04.jpg" alt="" class="img-fluid z-0 position-relative" width="100%">
+              <div class="tag">SALE</div>
+              <div class="img-overlay1">
+                <div class="overlay1 d-block">
+                  <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                  <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+
+                </div>
+                <div class="">
+                  <button class="overlay2" onclick="Swal.fire(
+              'Added Successfully',
+              'Product was added',
+              'success'
+            )">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <p class="mx-3 mt-2">Lorem ipsum dolor sit amet.</p>
+            <h5 class="m-3">$15.79</h5>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="News">
+      <div class="container">
+
+        <h1 style="text-align: center;">Latest News</h1>
+        <p style="text-align: center; font-size: 17px;opacity: 0.8;color: grey;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="container">
+        <div class="row" style="justify-content: center;padding: 10px;">
+          <div class="blog d-block col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/blog-img.jpg" alt="" width="350px" height="230px" style="margin: 0px;transform: translateX(-12px);">
+            <div class="blog-txt d-flex">
+              
+              <div class="overlay1-2 d-block">
+                <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+  
+              </div>
+              <div class="blog-text">
+                <h5 style="font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat animi inventore, odit sapiente tenetur deleniti modi fugit veritatis ex possimus omnis laboriosam placeat tempore dicta cumque perspiciatis ea iusto.</p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="blog d-block col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/blog-img-01.jpg" alt="" width="350px" height="230px" style="margin: 0px;transform: translateX(-12px);">
+            <div class="blog-txt d-flex">
+              
+              <div class="overlay1-2 d-block">
+                <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+  
+              </div>
+              <div class="blog-text">
+                <h5 style="font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat animi inventore, odit sapiente tenetur deleniti modi fugit veritatis ex possimus omnis laboriosam placeat tempore dicta cumque perspiciatis ea iusto.</p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="blog d-block col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/images/blog-img-02.jpg" alt="" width="350px" height="230px" style="margin: 0px;transform: translateX(-12px);">
+            <div class="blog-txt d-flex">
+              
+              <div class="overlay1-2 d-block">
+                <i class="fa-solid fa-eye" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+  
+              </div>
+              <div class="blog-text">
+                <h5 style="font-weight: 700;">Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quaerat animi inventore, odit sapiente tenetur deleniti modi fugit veritatis ex possimus omnis laboriosam placeat tempore dicta cumque perspiciatis ea iusto.</p>
+              </div>
+            </div>
+
+
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="last">
+      <img src="assets/images/ins-bg.jpg" alt="" style="z-index: 0;position: relative;" width="100%" height="300px">
+      <div class="ins-overlay ">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="assets/images/instagram-img-01.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-02.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-03.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-04.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-05.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-06.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-07.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-08.jpg" alt=""></div>
+          <div class="item"><img src="assets/images/instagram-img-09.jpg" alt=""></div>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+
+      <div class="footer-piece col-sm-12 col-md-6 col-lg-4">
+        <h6 style="border-bottom: 3px solid rgb(161, 12, 12); padding: 5px;margin-top: 50px;">About TheWayShop</h6>
+        <p style="color: gray;font-size: 13px;font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis rem cupiditate corporis voluptatem reiciendis dolores qui earum officia voluptates minus ut vero adipisci recusandae molestiae, exercitationem quis laboriosam amet omnis placeat assumenda, voluptas veniam. Praesentium sed reprehenderit exercitationem explicabo, enim inventore cupiditate, laborum aut natus iure pariatur fugit tempore!</p>
+        <ul class="contact-list">
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-google-plus-g"></i></li>
+          <li><i class="fa-solid fa-wifi"></i></li>
+          <li><i class="fa-brands fa-pinterest"></i></li>
+          <li><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+      </div>
+      <div class="footer-piece col-sm-12 col-md-6 col-lg-4">
+        <h6 style="border-bottom: 3px solid rgb(161, 12, 12); padding: 5px;margin-top: 50px;">information</h6>
+        <ul style="color: rgb(206, 202, 202);font-size: 15px;font-weight: 500">
+          <li>About Us</li>
+          <li>Customer service</li>
+          <li>our sitemap</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy policy</li>
+          <li>Delivery Information</li>
+        </ul>
+  
+      </div>
+      <div class="footer-piece col-sm-12 col-md-6 col-lg-4">
+        <h6 style="border-bottom: 3px solid rgb(161, 12, 12); padding: 5px;margin-top: 50px;">Contact us</h6>
+        <p style="color: rgb(206, 202, 202);font-size: 15px;font-weight: 500"></p>
+        <ul style="color: rgb(206, 202, 202);font-size: 15px;font-weight: 500;list-style:none;">
+          <li><i class="fa-solid fa-location-dot"></i>&nbsp;<p>Address: Michael l. days 3756 , prestin street wichita , ks 67213</p></li>
+          <li><i class="fa-solid fa-square-phone"></i>+1-888 705 770</li>
+          <li><i class="fa-solid fa-envelope"></i>contactinfo@gmail.com</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="copyright"><p>All Rights Reserved.&COPY; 2023 TheWayShop Design by:idk Made By:<button onclick="Swal.fire(
+      'The End?',
+      'Made By Ahmed Elashry',
+      'question'
+    )" style="color: rgb(206, 202, 202);font-size: 15px;font-weight: 500">Moody</button></p></div>
+  </footer>
+</html>
