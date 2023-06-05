@@ -453,6 +453,15 @@ footer{
 .copyright button:hover{
     cursor: context-menu;
 }
+@media(max-width:960px){
+    .logo-img{
+        width: 140px;
+    }
+
+
+}
+
+
 
 
 
